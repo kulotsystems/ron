@@ -3,9 +3,9 @@ Sample [@ionic/vue](https://ionicframework.com/docs/vue/overview) application fo
 
 ### Requirements
 1. **Node.js**: Install the latest version of Node.js from <https://nodejs.org>.
-2. **Android SDK**: Install Android SDK with **API 33**.
+2. **Android SDK**: Install Android SDK with **API Level 33**.
     Download Android Studio from <https://developer.android.com/studio>
-    and download API 33 in its SDK Manager.
+    and download API Level 33 in its SDK Manager.
 3. **Ionic CLI**: Install the Ionic CLI globally using this command:
     ```shell
     npm install -g @ionic/cli
