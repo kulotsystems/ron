@@ -3,10 +3,14 @@ Sample [@ionic/vue](https://ionicframework.com/docs/vue/overview) application fo
 
 ### Requirements
 1. **Node.js**: Install the latest version of Node.js from <https://nodejs.org>.
-2. **Android SDK**: Install Android SDK with **API Level 33**.
-    Download Android Studio from <https://developer.android.com/studio>
+2. **Java JDK**: Install Java JDK **17** from <https://www.oracle.com/ph/java/technologies/downloads>.
+
+    Also, set the [**JAVA_HOME**](https://confluence.atlassian.com/doc/setting-the-java_home-variable-in-windows-8895.html) in your environment variables.
+3. **Android SDK**: Install Android SDK with **API Level 33** from <https://developer.android.com/studio>
     and download API Level 33 in its SDK Manager.
-3. **Ionic CLI**: Install the Ionic CLI globally using this command:
+    
+   Also, set the [**ANDROID_HOME**](https://www.programsbuzz.com/article/set-androidhome-environment-variable-windows-10) in your environment variables.
+4. **Ionic CLI**: Install the Ionic CLI globally using this command:
     ```shell
     npm install -g @ionic/cli
     ```
