@@ -10,9 +10,9 @@ Sample [@ionic/vue](https://ionicframework.com/docs/vue/overview) application fo
     and download API Level 33 in its SDK Manager.
     
    Also, set the [**ANDROID_HOME**](https://www.programsbuzz.com/article/set-androidhome-environment-variable-windows-10) in your environment variables.
-4. **Ionic CLI**: Install the Ionic CLI globally using this command:
+4. **Ionic CLI**: Install the Ionic CLI and native-run globally using this command:
     ```shell
-    npm install -g @ionic/cli
+    npm install -g @ionic/cli native-run
     ```
    
 ### Development Setup
