@@ -48,4 +48,4 @@ To build the APK using **Android Studio**:
 4. Wait for the project to sync and build.
 5. Once the build is complete, go to the "Build" menu and select "Build Bundle(s) / APK(s)".
 6. Choose "Build APK(s)" from the options.
-7, Android Studio will generate the APK file, which can be found in the android/app/build/outputs/apk directory.
+7. Android Studio will generate the APK file, which can be found in the android/app/build/outputs/apk directory.
