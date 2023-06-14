@@ -1,7 +1,9 @@
 <template>
     <ion-header :translucent="true">
         <ion-toolbar>
-            <ion-title>{{ $store.state.socials.github.username }}</ion-title>
+            <ion-title>
+                <span class="ion-padding-start">{{ route.name }}</span>
+            </ion-title>
         </ion-toolbar>
     </ion-header>
 </template>
@@ -12,6 +14,9 @@
         IonHeader,
         IonToolbar
     } from '@ionic/vue';
+    import { useRoute } from 'vue-router';
+
+    const route = useRoute();
 </script>
 
 

@@ -1,7 +1,7 @@
 <template>
     <ion-header collapse="condense">
         <ion-toolbar>
-            <ion-title size="large">{{ $store.state.socials.github.username }}</ion-title>
+            <ion-title size="large">{{ route.name }}</ion-title>
         </ion-toolbar>
     </ion-header>
 </template>
@@ -12,6 +12,9 @@
         IonHeader,
         IonToolbar
     } from '@ionic/vue';
+    import { useRoute } from 'vue-router';
+
+    const route = useRoute();
 </script>
 
 

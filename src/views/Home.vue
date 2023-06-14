@@ -12,13 +12,13 @@
                         <div class="ion-text-center ion-padding-top">
                             <img
                                 :src="`https://avatars.githubusercontent.com/${$store.state.socials.github.username}`"
-                                style="width: 230px; height: 230px; border-radius: 50%"
+                                style="width: 196px; height: 196px; border-radius: 50%"
                             />
                         </div>
                     </ion-col>
                     <ion-col size-xs="12" size-sm="12" size-lg="9">
-                        <div class="ion-padding">
-                            <h1 class="ion-text-center">Hello World! I am Ron Hedwig</h1>
+                        <div class="ion-padding-start ion-padding-end">
+                            <h1 class="ion-text-center">Hello World!<br>I am <b>Ron Hedwig</b></h1>
                             <p class="ion-text-justify">
                                 I'm thrilled to have the opportunity to
                                 showcase my work and passion for coding. As a self-taught developer, I
@@ -31,33 +31,26 @@
                                 coding through my eyes!
                             </p>
                             <br/>
-                            <div align="center">
-                                <ion-button
-                                    class="ion-margin-end"
-                                    style="width: 120px;"
-                                    color="light"
-                                    @click="goToURL(`https://github.com/${$store.state.socials.github.username}`)"
-                                >
-                                    <ion-icon :icon="logoGithub" slot="start"/>
-                                    GitHub
-                                </ion-button>
-                                <ion-button
-                                    style="width: 120px;"
-                                    color="light"
-                                    @click="goToURL(`https://twitter.com/${$store.state.socials.twitter.username}`)"
-                                >
-                                    <ion-icon :icon="logoTwitter" slot="start"/>
-                                    Twitter
-                                </ion-button>
-                                <ion-button
-                                    class="ion-margin-start"
-                                    style="width: 120px;"
-                                    color="light"
-                                    @click="goToURL(`https://web.facebook.com/${$store.state.socials.facebook.username}`)"
-                                >
-                                    <ion-icon :icon="logoFacebook" slot="start"/>
-                                    Facebook
-                                </ion-button>
+                            <div style="display: flex; justify-content: center; align-items: center">
+                                <ion-buttons>
+                                    <ion-button
+                                        class="ion-margin-end"
+                                        @click="goToURL(`https://github.com/${$store.state.socials.github.username}`)"
+                                    >
+                                        <ion-icon :icon="logoGithub" slot="start"/>
+                                    </ion-button>
+                                    <ion-button
+                                        @click="goToURL(`https://twitter.com/${$store.state.socials.twitter.username}`)"
+                                    >
+                                        <ion-icon :icon="logoTwitter" slot="start"/>
+                                    </ion-button>
+                                    <ion-button
+                                        class="ion-margin-start"
+                                        @click="goToURL(`https://web.facebook.com/${$store.state.socials.facebook.username}`)"
+                                    >
+                                        <ion-icon :icon="logoFacebook" slot="start"/>
+                                    </ion-button>
+                                </ion-buttons>
                             </div>
                         </div>
                     </ion-col>
@@ -74,6 +67,7 @@
         IonPage,
         IonGrid,
         IonRow,
+        IonButtons,
         IonButton,
         IonIcon
     } from '@ionic/vue';
